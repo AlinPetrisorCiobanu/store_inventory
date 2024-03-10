@@ -1,0 +1,40 @@
+html,
+body {
+  font-family: var(--foont-rubik);
+  color: var(--foont-color);
+  background-color: var(--background-color);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+#root {
+  #NavBar {
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #Main {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 86vh;
+    @media screen and (max-width : 500px ) {
+      height: 80vh;
+    }
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: antiquewhite;
+  }
+  #Footer {
+    width: 100vw;
+    height: 8vh;
+    @media screen and (max-width : 500px ) {
+      height: 20vh;
+    }
+    color: aliceblue;
+    background-color: rgb(41, 46, 88);
+    overflow: hidden;
+  }
+}
