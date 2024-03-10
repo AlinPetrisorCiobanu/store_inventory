@@ -4,6 +4,15 @@ import Col from "react-bootstrap/Col";
 import "./Home.scss";
 
 export const Home = () => {
+
+  const add_material = (material) => {
+      alert(`se añade matrial al id ${material}`)
+  }
+
+  const remove_material = (material) => {
+      alert(`sale material con el id ${material}`)
+  }
+
   return (
     <Container id="Main" fluid className="text-center design_home">
       <Row className="d-flex justify-content-center mt-5 text-start align-items-middle">
@@ -51,14 +60,14 @@ export const Home = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={2} className="box_add">
+        <Col xs={2} className="box_add" onClick={()=>add_material(1)}>
           <Row>
             <Col>
               <h3>Entrada</h3>
             </Col>
           </Row>
         </Col>
-        <Col xs={2} className="box_remove">
+        <Col xs={2} className="box_remove" onClick={()=>remove_material(1)}>
           <Row>
             <Col>
               <h3>Salida</h3>
@@ -81,14 +90,14 @@ export const Home = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={2} className="box_add">
+        <Col xs={2} className="box_add" onClick={()=>add_material(2)}>
           <Row>
             <Col>
               <h3>Entrada</h3>
             </Col>
           </Row>
         </Col>
-        <Col xs={2} className="box_remove">
+        <Col xs={2} className="box_remove" onClick={()=>remove_material(2)}>
           <Row>
             <Col>
               <h3>Salida</h3>
@@ -111,14 +120,14 @@ export const Home = () => {
             </Col>
           </Row>
         </Col>
-        <Col xs={2} className="box_add">
+        <Col xs={2} className="box_add" onClick={()=>add_material(3)}>
           <Row>
             <Col>
               <h3>Entrada</h3>
             </Col>
           </Row>
         </Col>
-        <Col xs={2} className="box_remove">
+        <Col xs={2} className="box_remove" onClick={()=>remove_material(3)}>
           <Row>
             <Col>
               <h3>Salida</h3>
