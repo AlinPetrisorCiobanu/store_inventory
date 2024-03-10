@@ -1,0 +1,7 @@
+.design_navbar{
+    font-size: 1.6rem;
+    @media screen and (max-width:500px) {
+        margin-top: 1vh;
+        font-size: 0.9rem;
+    }
+}
