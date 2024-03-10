@@ -2,7 +2,7 @@
 export const NavBar = () => {
     return(
         <>
-            <h1>Inventario Almacen</h1>
+            <h4>Inventario Almacen</h4>
         </>
     )
 }
